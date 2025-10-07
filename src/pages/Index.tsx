@@ -93,71 +93,97 @@ const Index = () => {
         <div className="container mx-auto max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="grid grid-cols-6 gap-3 auto-rows-[80px]">
-              <img 
-                src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=400&q=80" 
-                alt="Architecture 1"
-                className="col-span-1 row-span-2 w-full h-full object-cover grayscale"
-              />
-              <img 
-                src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&q=80" 
-                alt="Architecture 2"
-                className="col-span-3 row-span-2 w-full h-full object-cover grayscale"
-              />
-              <img 
-                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&q=80" 
-                alt="Architecture 3"
-                className="col-span-2 row-span-2 w-full h-full object-cover grayscale"
-              />
-              <img 
-                src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=400&q=80" 
-                alt="Architecture 4"
-                className="col-span-2 row-span-3 w-full h-full object-cover grayscale"
-              />
-              <img 
-                src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=400&q=80" 
-                alt="Architecture 5"
-                className="col-span-2 row-span-2 w-full h-full object-cover grayscale"
-              />
-              <img 
-                src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=400&q=80" 
-                alt="Architecture 6"
-                className="col-span-2 row-span-1 w-full h-full object-cover grayscale"
-              />
-              <img 
-                src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400&q=80" 
-                alt="Architecture 7"
-                className="col-span-1 row-span-2 w-full h-full object-cover grayscale"
-              />
-              <img 
-                src="https://images.unsplash.com/photo-1486718448742-163732cd1544?w=600&q=80" 
-                alt="Architecture 8"
-                className="col-span-3 row-span-3 w-full h-full object-cover grayscale"
-              />
-              <img 
-                src="https://images.unsplash.com/photo-1431576901776-e539bd916ba2?w=400&q=80" 
-                alt="Architecture 9"
-                className="col-span-2 row-span-1 w-full h-full object-cover grayscale"
-              />
-              <img 
-                src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=400&q=80" 
-                alt="Architecture 10"
-                className="col-span-2 row-span-2 w-full h-full object-cover grayscale"
-              />
-              <img 
-                src="https://images.unsplash.com/photo-1513467535987-fd81bc7d62f8?w=400&q=80" 
-                alt="Architecture 11"
-                className="col-span-1 row-span-1 w-full h-full object-cover grayscale"
-              />
-              <img 
-                src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=400&q=80" 
-                alt="Architecture 12"
-                className="col-span-2 row-span-1 w-full h-full object-cover grayscale"
-              />
-              <img 
-                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&q=80" 
-                alt="Architecture 13"
-                className="col-span-4 row-span-2 w-full h-full object-cover grayscale"
-              />
+              <div className="col-span-1 row-span-2 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=400&q=80" 
+                  alt="Architecture 1"
+                  className="w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-110 transition-all duration-500"
+                />
+              </div>
+              <div className="col-span-3 row-span-2 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&q=80" 
+                  alt="Architecture 2"
+                  className="w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-110 transition-all duration-500"
+                />
+              </div>
+              <div className="col-span-2 row-span-2 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&q=80" 
+                  alt="Architecture 3"
+                  className="w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-110 transition-all duration-500"
+                />
+              </div>
+              <div className="col-span-2 row-span-3 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=400&q=80" 
+                  alt="Architecture 4"
+                  className="w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-110 transition-all duration-500"
+                />
+              </div>
+              <div className="col-span-2 row-span-2 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=400&q=80" 
+                  alt="Architecture 5"
+                  className="w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-110 transition-all duration-500"
+                />
+              </div>
+              <div className="col-span-2 row-span-1 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=400&q=80" 
+                  alt="Architecture 6"
+                  className="w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-110 transition-all duration-500"
+                />
+              </div>
+              <div className="col-span-1 row-span-2 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400&q=80" 
+                  alt="Architecture 7"
+                  className="w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-110 transition-all duration-500"
+                />
+              </div>
+              <div className="col-span-3 row-span-3 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1486718448742-163732cd1544?w=600&q=80" 
+                  alt="Architecture 8"
+                  className="w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-110 transition-all duration-500"
+                />
+              </div>
+              <div className="col-span-2 row-span-1 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1431576901776-e539bd916ba2?w=400&q=80" 
+                  alt="Architecture 9"
+                  className="w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-110 transition-all duration-500"
+                />
+              </div>
+              <div className="col-span-2 row-span-2 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=400&q=80" 
+                  alt="Architecture 10"
+                  className="w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-110 transition-all duration-500"
+                />
+              </div>
+              <div className="col-span-1 row-span-1 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1513467535987-fd81bc7d62f8?w=400&q=80" 
+                  alt="Architecture 11"
+                  className="w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-110 transition-all duration-500"
+                />
+              </div>
+              <div className="col-span-2 row-span-1 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=400&q=80" 
+                  alt="Architecture 12"
+                  className="w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-110 transition-all duration-500"
+                />
+              </div>
+              <div className="col-span-4 row-span-2 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&q=80" 
+                  alt="Architecture 13"
+                  className="w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-110 transition-all duration-500"
+                />
+              </div>
             </div>
 
             <div className="space-y-8">
