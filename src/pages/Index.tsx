@@ -102,46 +102,41 @@ const Index = () => {
       <section id="about" className="py-32 px-6 bg-white">
         <div className="container mx-auto max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="relative h-[650px]">
+            <div className="grid grid-cols-3 gap-3 auto-rows-[120px]">
               <img 
                 src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=400&q=80" 
                 alt="Architecture 1"
-                className="absolute top-16 left-8 w-32 h-44 object-cover shadow-lg"
+                className="col-span-1 row-span-2 w-full h-full object-cover shadow-lg"
               />
               <img 
                 src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&q=80" 
                 alt="Architecture 2"
-                className="absolute top-0 left-44 w-56 h-52 object-cover shadow-lg"
+                className="col-span-2 row-span-2 w-full h-full object-cover shadow-lg"
               />
               <img 
                 src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&q=80" 
                 alt="Architecture 3"
-                className="absolute top-8 right-32 w-36 h-40 object-cover shadow-lg"
+                className="col-span-1 row-span-1 w-full h-full object-cover shadow-lg"
               />
               <img 
                 src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=400&q=80" 
                 alt="Architecture 4"
-                className="absolute top-56 left-0 w-48 h-56 object-cover shadow-lg"
+                className="col-span-1 row-span-2 w-full h-full object-cover shadow-lg"
               />
               <img 
                 src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=400&q=80" 
                 alt="Architecture 5"
-                className="absolute top-60 left-52 w-40 h-48 object-cover shadow-lg"
+                className="col-span-1 row-span-2 w-full h-full object-cover shadow-lg"
               />
               <img 
                 src="https://images.unsplash.com/photo-1486718448742-163732cd1544?w=600&q=80" 
                 alt="Architecture 6"
-                className="absolute top-52 right-0 w-64 h-56 object-cover shadow-lg"
+                className="col-span-2 row-span-2 w-full h-full object-cover shadow-lg"
               />
               <img 
                 src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=400&q=80" 
                 alt="Architecture 7"
-                className="absolute bottom-20 left-16 w-32 h-36 object-cover shadow-lg"
-              />
-              <img 
-                src="https://images.unsplash.com/photo-1513467535987-fd81bc7d62f8?w=600&q=80" 
-                alt="Architecture 8"
-                className="absolute bottom-0 right-24 w-72 h-52 object-cover shadow-lg"
+                className="col-span-1 row-span-1 w-full h-full object-cover shadow-lg"
               />
             </div>
 
