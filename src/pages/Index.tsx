@@ -275,56 +275,63 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="contact" className="py-20 px-6">
+      <section id="contact" className="py-32 px-6 bg-[#E8E3DA]">
         <div className="container mx-auto max-w-2xl text-center">
-          <h2 className="text-4xl md:text-5xl font-light mb-6">Начнём проект</h2>
-          <p className="text-lg text-muted-foreground mb-10 leading-relaxed">
+          <h2 className="text-5xl font-light mb-6 text-[#2C2C2C]">Начнём проект</h2>
+          <p className="text-lg text-[#5A5A5A] mb-12 leading-relaxed">
             Готовы обсудить ваш проект? Свяжитесь с нами для консультации 
             и узнайте, как мы можем воплотить ваши идеи в реальность.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" className="text-base px-8">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+            <Button 
+              size="lg" 
+              className="text-base px-10 py-6 bg-[#8B7355] hover:bg-[#8B7355]/90 text-white border-none"
+            >
               <Icon name="Mail" size={18} className="mr-2" />
               Написать нам
             </Button>
-            <Button size="lg" variant="outline" className="text-base px-8">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="text-base px-10 py-6 border-[#2C2C2C] text-[#2C2C2C] hover:bg-[#2C2C2C] hover:text-white"
+            >
               <Icon name="Phone" size={18} className="mr-2" />
               Позвонить
             </Button>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 pt-8 border-t border-border">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-12 pt-12 border-t border-[#2C2C2C]/20">
             <div>
-              <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Email</p>
-              <p className="font-medium">info@nda-studio.ru</p>
+              <p className="text-xs text-[#5A5A5A] uppercase tracking-wider mb-3">EMAIL</p>
+              <p className="font-medium text-[#2C2C2C]">info@nda-studio.ru</p>
             </div>
             <div>
-              <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Телефон</p>
-              <p className="font-medium">+7 (495) 123-45-67</p>
+              <p className="text-xs text-[#5A5A5A] uppercase tracking-wider mb-3">ТЕЛЕФОН</p>
+              <p className="font-medium text-[#2C2C2C]">+7 (495) 123-45-67</p>
             </div>
             <div>
-              <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Адрес</p>
-              <p className="font-medium">Москва, ул. Примерная, 1</p>
+              <p className="text-xs text-[#5A5A5A] uppercase tracking-wider mb-3">АДРЕС</p>
+              <p className="font-medium text-[#2C2C2C]">Москва, ул. Примерная, 1</p>
             </div>
           </div>
         </div>
       </section>
 
-      <footer className="py-8 px-6 border-t border-border bg-white">
+      <footer className="py-8 px-6 bg-white border-t border-[#2C2C2C]/10">
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-[#5A5A5A]">
               © 2025 NDA Studio. Neuro.Design.Architecture
             </p>
             <div className="flex gap-6">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="#" className="text-[#5A5A5A] hover:text-[#2C2C2C] transition-colors">
                 <Icon name="Instagram" size={20} />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="#" className="text-[#5A5A5A] hover:text-[#2C2C2C] transition-colors">
                 <Icon name="Facebook" size={20} />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="#" className="text-[#5A5A5A] hover:text-[#2C2C2C] transition-colors">
                 <Icon name="Linkedin" size={20} />
               </a>
             </div>
