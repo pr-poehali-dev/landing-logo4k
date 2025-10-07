@@ -129,24 +129,29 @@ const Index = () => {
                 className="col-span-2 row-span-2 w-full h-full object-cover"
               />
               <img 
-                src="https://images.unsplash.com/photo-1486718448742-163732cd1544?w=600&q=80" 
+                src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=400&q=80" 
                 alt="Architecture 6"
+                className="col-span-2 row-span-1 w-full h-full object-cover"
+              />
+              <img 
+                src="https://images.unsplash.com/photo-1486718448742-163732cd1544?w=600&q=80" 
+                alt="Architecture 7"
                 className="col-span-4 row-span-3 w-full h-full object-cover"
               />
               <img 
                 src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=400&q=80" 
-                alt="Architecture 7"
-                className="col-span-2 row-span-1 w-full h-full object-cover"
+                alt="Architecture 8"
+                className="col-span-2 row-span-2 w-full h-full object-cover"
               />
               <img 
-                src="https://images.unsplash.com/photo-1513467535987-fd81bc7d62f8?w=600&q=80" 
-                alt="Architecture 8"
-                className="col-span-1 row-span-2 w-full h-full object-cover"
+                src="https://images.unsplash.com/photo-1513467535987-fd81bc7d62f8?w=400&q=80" 
+                alt="Architecture 9"
+                className="col-span-1 row-span-1 w-full h-full object-cover"
               />
               <img 
                 src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&q=80" 
-                alt="Architecture 9"
-                className="col-span-5 row-span-3 w-full h-full object-cover"
+                alt="Architecture 10"
+                className="col-span-5 row-span-2 w-full h-full object-cover"
               />
             </div>
 
