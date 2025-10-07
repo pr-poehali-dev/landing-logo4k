@@ -99,23 +99,66 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="about" className="py-20 px-6 bg-background">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="text-4xl md:text-5xl font-light mb-8 text-center">О студии</h2>
-          <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
-            <p>
-              NDA — архитектурная студия, основанная на синтезе нейротехнологий, дизайна и архитектурного мастерства. 
-              Мы создаём пространства, которые объединяют функциональность с эстетикой, разум с чувствами.
-            </p>
-            <p>
-              Наш подход базируется на глубоком анализе потребностей клиента и контекста проекта. 
-              Каждое решение рождается на стыке технологий, искусства и человеческого опыта, 
-              создавая гармоничные пространства с неповторимым характером.
-            </p>
-            <p>
-              Мы специализируемся на проектировании частных резиденций, коммерческих объектов 
-              и общественных пространств, уделяя особое внимание деталям и качеству реализации.
-            </p>
+      <section id="about" className="py-32 px-6 bg-white">
+        <div className="container mx-auto max-w-7xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="relative h-[600px]">
+              <div className="absolute top-0 left-0 w-32 h-32 bg-[#2C2C2C]"></div>
+              <img 
+                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&q=80" 
+                alt="Architecture 1"
+                className="absolute top-12 left-12 w-40 h-56 object-cover shadow-lg"
+              />
+              <img 
+                src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400&q=80" 
+                alt="Architecture 2"
+                className="absolute top-0 left-56 w-48 h-32 object-cover shadow-lg"
+              />
+              <div className="absolute top-4 right-32 w-16 h-16 bg-[#2C2C2C]"></div>
+              <img 
+                src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=400&q=80" 
+                alt="Architecture 3"
+                className="absolute top-24 right-0 w-56 h-44 object-cover shadow-lg"
+              />
+              <img 
+                src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=400&q=80" 
+                alt="Architecture 4"
+                className="absolute top-72 left-0 w-44 h-36 object-cover shadow-lg"
+              />
+              <img 
+                src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=400&q=80" 
+                alt="Architecture 5"
+                className="absolute top-64 left-48 w-36 h-48 object-cover shadow-lg"
+              />
+              <div className="absolute bottom-16 left-40 w-12 h-12 bg-[#8B7355]"></div>
+              <img 
+                src="https://images.unsplash.com/photo-1486718448742-163732cd1544?w=400&q=80" 
+                alt="Architecture 6"
+                className="absolute bottom-0 right-12 w-52 h-40 object-cover shadow-lg"
+              />
+              <div className="absolute bottom-44 right-0 w-20 h-20 bg-[#8B7355]"></div>
+            </div>
+
+            <div className="space-y-8">
+              <h2 className="text-5xl font-light text-[#2C2C2C] leading-tight">
+                Neuro.Design.<br/>Architecture
+              </h2>
+              <div className="space-y-6 text-lg text-[#5A5A5A] leading-relaxed">
+                <p>
+                  NDA — архитектурная студия, основанная на синтезе нейротехнологий, дизайна и архитектурного мастерства. 
+                  Мы создаём пространства, которые объединяют функциональность с эстетикой, разум с чувствами.
+                </p>
+                <p>
+                  Наш подход базируется на глубоком анализе потребностей клиента и контекста проекта. 
+                  Каждое решение рождается на стыке технологий, искусства и человеческого опыта, 
+                  создавая гармоничные пространства с неповторимым характером.
+                </p>
+                <p>
+                  Мы специализируемся на проектировании частных резиденций, коммерческих объектов 
+                  и общественных пространств, уделяя особое внимание деталям и качеству реализации.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
