@@ -64,7 +64,14 @@ const Index = () => {
       <nav className="absolute top-0 w-full bg-[#8B7355]/10 backdrop-blur-md border-b border-[#8B7355]/20 z-50">
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <div className="text-xl font-semibold tracking-tight text-[#2C2C2C]">NDA</div>
+            <div className="flex items-center gap-3">
+              <img 
+                src="https://cdn.poehali.dev/files/eeba8c30-2349-466e-b18b-01e7c07891cb.png" 
+                alt="NDA" 
+                className="h-8 w-auto"
+              />
+              <span className="text-xl font-semibold tracking-tight text-[#2C2C2C]">NDA</span>
+            </div>
             <div className="hidden md:flex gap-8">
               <a href="#about" className="text-sm hover:text-[#8B7355] transition-colors text-[#2C2C2C] font-medium">О студии</a>
               <a href="#portfolio" className="text-sm hover:text-[#8B7355] transition-colors text-[#2C2C2C] font-medium">Портфолио</a>
