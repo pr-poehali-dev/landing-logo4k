@@ -29,33 +29,23 @@ const Index = () => {
   const portfolio = [
     {
       title: "Загородная резиденция",
-      category: "Частная архитектура",
+      description: "Современная архитектура частного дома площадью 450 кв.м на берегу озера. Проект объединяет минималистичные формы с природным ландшафтом, создавая гармоничное пространство для жизни.",
       image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80"
     },
     {
       title: "Офисное пространство",
-      category: "Коммерческая недвижимость",
+      description: "Дизайн открытого офиса для IT-компании с акцентом на гибкие рабочие зоны и пространства для коллабораций. Естественное освещение и экологичные материалы создают комфортную рабочую среду.",
       image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80"
     },
     {
       title: "Минималистичная квартира",
-      category: "Дизайн интерьеров",
+      description: "Интерьер квартиры в скандинавском стиле площадью 120 кв.м. Светлые тона, натуральные материалы и продуманная система хранения создают ощущение простора и спокойствия.",
       image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80"
     },
     {
       title: "Коммерческий центр",
-      category: "Общественные здания",
+      description: "Архитектура многофункционального торгового комплекса в центре города. Фасад из стекла и бетона отражает динамику городской жизни, а внутренние пространства организованы для максимального удобства посетителей.",
       image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80"
-    },
-    {
-      title: "Городская вилла",
-      category: "Частная архитектура",
-      image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80"
-    },
-    {
-      title: "Лофт пространство",
-      category: "Дизайн интерьеров",
-      image: "https://images.unsplash.com/photo-1556228578-dd6a8f2c1e64?w=800&q=80"
     }
   ];
 
@@ -200,7 +190,7 @@ const Index = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {portfolio.map((project, index) => (
-              <div key={index} className="space-y-4">
+              <div key={index} className="space-y-4" style={{ marginTop: index % 2 === 0 ? '0' : '4rem' }}>
                 <div className="relative aspect-[3/4] overflow-hidden">
                   <span className="absolute top-4 left-4 w-8 h-8 rounded-full border-2 border-white bg-black/30 backdrop-blur-sm flex items-center justify-center text-white text-sm font-medium z-10">
                     {index + 1}
@@ -213,7 +203,7 @@ const Index = () => {
                 </div>
                 <div className="space-y-2">
                   <h3 className="text-lg font-medium text-[#2C2C2C]">{project.title}</h3>
-                  <p className="text-sm text-[#5A5A5A] leading-relaxed">{project.category}</p>
+                  <p className="text-sm text-[#5A5A5A] leading-relaxed">{project.description}</p>
                 </div>
               </div>
             ))}
