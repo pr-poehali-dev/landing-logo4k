@@ -75,11 +75,11 @@ const Index = () => {
         </div>
       </nav>
 
-      <section className="w-full h-screen relative">
+      <section className="w-full h-screen relative bg-background">
         <img 
           src="https://cdn.poehali.dev/files/ca9cf857-bb7f-4b17-a5ab-097bc530608d.png" 
           alt="NDA Logo" 
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain"
         />
       </section>
 
