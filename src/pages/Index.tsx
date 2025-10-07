@@ -61,15 +61,15 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
-      <nav className="absolute top-0 w-full bg-transparent z-50">
-        <div className="container mx-auto px-6 py-6">
+      <nav className="absolute top-0 w-full bg-[#8B7355]/10 backdrop-blur-md border-b border-[#8B7355]/20 z-50">
+        <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <div className="text-xl font-semibold tracking-tight text-foreground">NDA</div>
+            <div className="text-xl font-semibold tracking-tight text-[#2C2C2C]">NDA</div>
             <div className="hidden md:flex gap-8">
-              <a href="#about" className="text-sm hover:text-primary transition-colors text-foreground">О студии</a>
-              <a href="#portfolio" className="text-sm hover:text-primary transition-colors text-foreground">Портфолио</a>
-              <a href="#services" className="text-sm hover:text-primary transition-colors text-foreground">Услуги</a>
-              <a href="#contact" className="text-sm hover:text-primary transition-colors text-foreground">Контакты</a>
+              <a href="#about" className="text-sm hover:text-[#8B7355] transition-colors text-[#2C2C2C] font-medium">О студии</a>
+              <a href="#portfolio" className="text-sm hover:text-[#8B7355] transition-colors text-[#2C2C2C] font-medium">Портфолио</a>
+              <a href="#services" className="text-sm hover:text-[#8B7355] transition-colors text-[#2C2C2C] font-medium">Услуги</a>
+              <a href="#contact" className="text-sm hover:text-[#8B7355] transition-colors text-[#2C2C2C] font-medium">Контакты</a>
             </div>
           </div>
         </div>
