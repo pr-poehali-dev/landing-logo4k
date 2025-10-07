@@ -194,30 +194,28 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="portfolio" className="py-20 px-6">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl md:text-5xl font-light mb-4 text-center">Портфолио</h2>
-          <p className="text-center text-muted-foreground mb-16">Избранные проекты</p>
+      <section id="portfolio" className="py-32 px-6 bg-white">
+        <div className="container mx-auto max-w-7xl">
+          <h2 className="text-5xl font-light mb-20 text-center text-[#2C2C2C]">Портфолио</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {portfolio.map((project, index) => (
-              <Card 
-                key={index} 
-                className="group overflow-hidden border-none shadow-sm hover:shadow-xl transition-all duration-500"
-              >
-                <div className="relative overflow-hidden aspect-[4/3]">
+              <div key={index} className="space-y-4">
+                <div className="relative aspect-[3/4] overflow-hidden">
+                  <span className="absolute top-4 left-4 w-8 h-8 rounded-full border-2 border-white bg-black/30 backdrop-blur-sm flex items-center justify-center text-white text-sm font-medium z-10">
+                    {index + 1}
+                  </span>
                   <img 
                     src={project.image} 
                     alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 </div>
-                <div className="p-6">
-                  <p className="text-xs text-primary font-medium mb-2 uppercase tracking-wider">{project.category}</p>
-                  <h3 className="text-xl font-medium">{project.title}</h3>
+                <div className="space-y-2">
+                  <h3 className="text-lg font-medium text-[#2C2C2C]">{project.title}</h3>
+                  <p className="text-sm text-[#5A5A5A] leading-relaxed">{project.category}</p>
                 </div>
-              </Card>
+              </div>
             ))}
           </div>
         </div>
