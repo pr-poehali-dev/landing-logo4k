@@ -106,52 +106,57 @@ const Index = () => {
               <img 
                 src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=400&q=80" 
                 alt="Architecture 1"
-                className="col-span-1 row-span-2 w-full h-full object-cover"
+                className="col-span-1 row-span-2 w-full h-full object-cover grayscale"
               />
               <img 
                 src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&q=80" 
                 alt="Architecture 2"
-                className="col-span-3 row-span-2 w-full h-full object-cover"
+                className="col-span-3 row-span-2 w-full h-full object-cover grayscale"
               />
               <img 
                 src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&q=80" 
                 alt="Architecture 3"
-                className="col-span-2 row-span-2 w-full h-full object-cover"
+                className="col-span-2 row-span-2 w-full h-full object-cover grayscale"
               />
               <img 
                 src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=400&q=80" 
                 alt="Architecture 4"
-                className="col-span-2 row-span-3 w-full h-full object-cover"
+                className="col-span-2 row-span-3 w-full h-full object-cover grayscale"
               />
               <img 
                 src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=400&q=80" 
                 alt="Architecture 5"
-                className="col-span-2 row-span-2 w-full h-full object-cover"
+                className="col-span-2 row-span-2 w-full h-full object-cover grayscale"
               />
               <img 
                 src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=400&q=80" 
                 alt="Architecture 6"
-                className="col-span-2 row-span-1 w-full h-full object-cover"
+                className="col-span-2 row-span-1 w-full h-full object-cover grayscale"
+              />
+              <img 
+                src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400&q=80" 
+                alt="Architecture 7"
+                className="col-span-1 row-span-2 w-full h-full object-cover grayscale"
               />
               <img 
                 src="https://images.unsplash.com/photo-1486718448742-163732cd1544?w=600&q=80" 
-                alt="Architecture 7"
-                className="col-span-4 row-span-3 w-full h-full object-cover"
+                alt="Architecture 8"
+                className="col-span-4 row-span-3 w-full h-full object-cover grayscale"
               />
               <img 
                 src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=400&q=80" 
-                alt="Architecture 8"
-                className="col-span-2 row-span-2 w-full h-full object-cover"
+                alt="Architecture 9"
+                className="col-span-2 row-span-2 w-full h-full object-cover grayscale"
               />
               <img 
                 src="https://images.unsplash.com/photo-1513467535987-fd81bc7d62f8?w=400&q=80" 
-                alt="Architecture 9"
-                className="col-span-1 row-span-1 w-full h-full object-cover"
+                alt="Architecture 10"
+                className="col-span-1 row-span-1 w-full h-full object-cover grayscale"
               />
               <img 
                 src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&q=80" 
-                alt="Architecture 10"
-                className="col-span-5 row-span-2 w-full h-full object-cover"
+                alt="Architecture 11"
+                className="col-span-5 row-span-2 w-full h-full object-cover grayscale"
               />
             </div>
 
