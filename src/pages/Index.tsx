@@ -83,7 +83,7 @@ const Index = () => {
         />
       </section>
 
-      <section id="about" className="py-20 px-6 bg-white">
+      <section id="about" className="py-20 px-6 bg-background">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-4xl md:text-5xl font-light mb-8 text-center">О студии</h2>
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
