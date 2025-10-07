@@ -61,30 +61,26 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
-      <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-sm z-50 border-b border-border">
-        <div className="container mx-auto px-6 py-4">
+      <nav className="absolute top-0 w-full bg-transparent z-50">
+        <div className="container mx-auto px-6 py-6">
           <div className="flex justify-between items-center">
-            <div className="text-xl font-semibold tracking-tight">NDA</div>
+            <div className="text-xl font-semibold tracking-tight text-foreground">NDA</div>
             <div className="hidden md:flex gap-8">
-              <a href="#about" className="text-sm hover:text-primary transition-colors">О студии</a>
-              <a href="#portfolio" className="text-sm hover:text-primary transition-colors">Портфолио</a>
-              <a href="#services" className="text-sm hover:text-primary transition-colors">Услуги</a>
-              <a href="#contact" className="text-sm hover:text-primary transition-colors">Контакты</a>
+              <a href="#about" className="text-sm hover:text-primary transition-colors text-foreground">О студии</a>
+              <a href="#portfolio" className="text-sm hover:text-primary transition-colors text-foreground">Портфолио</a>
+              <a href="#services" className="text-sm hover:text-primary transition-colors text-foreground">Услуги</a>
+              <a href="#contact" className="text-sm hover:text-primary transition-colors text-foreground">Контакты</a>
             </div>
           </div>
         </div>
       </nav>
 
-      <section className="pt-32 pb-20 px-6">
-        <div className="container mx-auto max-w-5xl">
-          <div className="flex justify-center mb-12">
-            <img 
-              src="https://cdn.poehali.dev/files/ca9cf857-bb7f-4b17-a5ab-097bc530608d.png" 
-              alt="NDA Logo" 
-              className="w-full max-w-2xl h-auto"
-            />
-          </div>
-        </div>
+      <section className="w-full h-screen relative">
+        <img 
+          src="https://cdn.poehali.dev/files/ca9cf857-bb7f-4b17-a5ab-097bc530608d.png" 
+          alt="NDA Logo" 
+          className="w-full h-full object-cover"
+        />
       </section>
 
       <section id="about" className="py-20 px-6 bg-white">
