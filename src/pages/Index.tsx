@@ -75,7 +75,7 @@ const Index = () => {
         <img 
           src="https://cdn.poehali.dev/files/ca9cf857-bb7f-4b17-a5ab-097bc530608d.png" 
           alt="NDA Logo" 
-          className="w-full h-full object-contain"
+          className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 flex items-center justify-end pr-20 md:pr-32">
           <div className="max-w-lg space-y-4">
