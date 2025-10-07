@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
 
 const Index = () => {
@@ -29,207 +28,84 @@ const Index = () => {
   const portfolio = [
     {
       title: "Загородная резиденция",
-      description: "Современная архитектура частного дома площадью 450 кв.м на берегу озера. Проект объединяет минималистичные формы с природным ландшафтом, создавая гармоничное пространство для жизни.",
       image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80"
     },
     {
       title: "Офисное пространство",
-      description: "Дизайн открытого офиса для IT-компании с акцентом на гибкие рабочие зоны и пространства для коллабораций. Естественное освещение и экологичные материалы создают комфортную рабочую среду.",
       image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80"
     },
     {
       title: "Минималистичная квартира",
-      description: "Интерьер квартиры в скандинавском стиле площадью 120 кв.м. Светлые тона, натуральные материалы и продуманная система хранения создают ощущение простора и спокойствия.",
       image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80"
     },
     {
       title: "Коммерческий центр",
-      description: "Архитектура многофункционального торгового комплекса в центре города. Фасад из стекла и бетона отражает динамику городской жизни, а внутренние пространства организованы для максимального удобства посетителей.",
       image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80"
+    },
+    {
+      title: "Современный дом",
+      image: "https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?w=800&q=80"
+    },
+    {
+      title: "Ресторан",
+      image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80"
     }
   ];
 
   return (
-    <div className="min-h-screen">
-      <nav className="absolute top-0 w-full bg-[#8B7355]/10 backdrop-blur-md border-b border-[#8B7355]/20 z-50">
+    <div className="min-h-screen bg-white">
+      <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-md border-b border-[#2C2C2C]/10 z-50">
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <div>
-              <img 
-                src="https://cdn.poehali.dev/files/eeba8c30-2349-466e-b18b-01e7c07891cb.png" 
-                alt="NDA" 
-                className="h-8 w-auto"
-              />
+            <div className="text-2xl font-light tracking-tight text-[#2C2C2C]">
+              NDA
             </div>
             <div className="hidden md:flex gap-8">
-              <a href="#about" className="text-sm hover:text-[#8B7355] transition-colors text-[#2C2C2C] font-medium">О студии</a>
-              <a href="#portfolio" className="text-sm hover:text-[#8B7355] transition-colors text-[#2C2C2C] font-medium">Портфолио</a>
-              <a href="#services" className="text-sm hover:text-[#8B7355] transition-colors text-[#2C2C2C] font-medium">Услуги</a>
-              <a href="#contact" className="text-sm hover:text-[#8B7355] transition-colors text-[#2C2C2C] font-medium">Контакты</a>
+              <a href="#about" className="text-sm hover:text-[#2C2C2C]/60 transition-colors text-[#2C2C2C]">О нас</a>
+              <a href="#portfolio" className="text-sm hover:text-[#2C2C2C]/60 transition-colors text-[#2C2C2C]">Портфолио</a>
+              <a href="#services" className="text-sm hover:text-[#2C2C2C]/60 transition-colors text-[#2C2C2C]">Услуги</a>
+              <a href="#contact" className="text-sm hover:text-[#2C2C2C]/60 transition-colors text-[#2C2C2C]">Контакты</a>
             </div>
           </div>
         </div>
       </nav>
 
-      <section className="w-full h-screen relative bg-white">
+      <section className="w-full h-screen relative bg-[#E8E3DA] flex items-center justify-center">
         <img 
           src="https://cdn.poehali.dev/files/ca9cf857-bb7f-4b17-a5ab-097bc530608d.png" 
-          alt="NDA Logo" 
-          className="w-full h-full object-cover"
+          alt="NDA - Neuro.Design.Architecture" 
+          className="max-w-md w-full px-6"
         />
-        <div className="absolute inset-0 flex items-center justify-end pr-20 md:pr-32">
-          <div className="max-w-lg space-y-4">
-            <h1 className="text-4xl md:text-6xl font-light text-[#2C2C2C] leading-tight">
-              Пространства<br/>с характером
-            </h1>
-            <p className="text-lg md:text-xl text-[#8B7355] font-light">
-              Архитектура. Дизайн. Технологии.
-            </p>
-          </div>
+      </section>
+
+      <section id="about" className="py-32 px-6 bg-white border-t border-[#2C2C2C]">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-5xl md:text-6xl font-light mb-12 text-[#2C2C2C]">
+            Воплощение вашего<br/>пространства в реальность
+          </h2>
+          <p className="text-xl text-[#5A5A5A] leading-relaxed max-w-3xl mx-auto">
+            Воплощение вашего будущего, настоящего, после определенного времени 
+            создания реализации с помощью архитектурных инновационных решений
+          </p>
         </div>
       </section>
 
-      <section id="about" className="py-32 px-6 bg-white">
-        <div className="container mx-auto max-w-7xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="grid grid-cols-6 gap-3 auto-rows-[80px]">
-              <div className="col-span-1 row-span-2 overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=400&q=80" 
-                  alt="Architecture 1"
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-110 transition-all duration-500"
-                />
-              </div>
-              <div className="col-span-3 row-span-2 overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&q=80" 
-                  alt="Architecture 2"
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-110 transition-all duration-500"
-                />
-              </div>
-              <div className="col-span-2 row-span-2 overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&q=80" 
-                  alt="Architecture 3"
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-110 transition-all duration-500"
-                />
-              </div>
-              <div className="col-span-2 row-span-3 overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=400&q=80" 
-                  alt="Architecture 4"
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-110 transition-all duration-500"
-                />
-              </div>
-              <div className="col-span-2 row-span-2 overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=400&q=80" 
-                  alt="Architecture 5"
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-110 transition-all duration-500"
-                />
-              </div>
-              <div className="col-span-2 row-span-1 overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=400&q=80" 
-                  alt="Architecture 6"
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-110 transition-all duration-500"
-                />
-              </div>
-              <div className="col-span-1 row-span-2 overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400&q=80" 
-                  alt="Architecture 7"
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-110 transition-all duration-500"
-                />
-              </div>
-              <div className="col-span-3 row-span-3 overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1486718448742-163732cd1544?w=600&q=80" 
-                  alt="Architecture 8"
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-110 transition-all duration-500"
-                />
-              </div>
-              <div className="col-span-2 row-span-1 overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1431576901776-e539bd916ba2?w=400&q=80" 
-                  alt="Architecture 9"
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-110 transition-all duration-500"
-                />
-              </div>
-              <div className="col-span-2 row-span-2 overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=400&q=80" 
-                  alt="Architecture 10"
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-110 transition-all duration-500"
-                />
-              </div>
-              <div className="col-span-1 row-span-1 overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1513467535987-fd81bc7d62f8?w=400&q=80" 
-                  alt="Architecture 11"
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-110 transition-all duration-500"
-                />
-              </div>
-              <div className="col-span-2 row-span-1 overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=400&q=80" 
-                  alt="Architecture 12"
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-110 transition-all duration-500"
-                />
-              </div>
-              <div className="col-span-4 row-span-2 overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&q=80" 
-                  alt="Architecture 13"
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-110 transition-all duration-500"
-                />
-              </div>
-            </div>
-
-            <div className="space-y-8">
-              <h2 className="text-5xl font-light text-[#2C2C2C] leading-tight">
-                Neuro.Design.<br/>Architecture
-              </h2>
-              <div className="space-y-6 text-lg text-[#5A5A5A] leading-relaxed">
-                <p>
-                  NDA — архитектурная студия, основанная на синтезе нейротехнологий, дизайна и архитектурного мастерства. 
-                  Мы создаём пространства, которые объединяют функциональность с эстетикой, разум с чувствами.
-                </p>
-                <p>
-                  Наш подход базируется на глубоком анализе потребностей клиента и контекста проекта. 
-                  Каждое решение рождается на стыке технологий, искусства и человеческого опыта, 
-                  создавая гармоничные пространства с неповторимым характером.
-                </p>
-                <p>
-                  Мы специализируемся на проектировании частных резиденций, коммерческих объектов 
-                  и общественных пространств, уделяя особое внимание деталям и качеству реализации.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="portfolio" className="pt-2 pb-32 px-6 bg-white">
+      <section id="portfolio" className="py-32 px-6 bg-white">
         <div className="container mx-auto max-w-7xl">
           <h2 className="text-5xl font-light mb-20 text-center text-[#2C2C2C]">Портфолио</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {portfolio.map((project, index) => (
-              <div key={index} className="space-y-4" style={{ marginTop: index % 2 === 0 ? '0' : '4rem' }}>
-                <div className="relative aspect-[3/4] overflow-hidden">
-                  <span className="absolute top-4 left-4 w-8 h-8 rounded-full border-2 border-white bg-black/30 backdrop-blur-sm flex items-center justify-center text-white text-sm font-medium z-10">
-                    {index + 1}
-                  </span>
-                  <img 
-                    src={project.image} 
-                    alt={project.title}
-                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-lg font-medium text-[#2C2C2C]">{project.title}</h3>
-                  <p className="text-sm text-[#5A5A5A] leading-relaxed">{project.description}</p>
+              <div key={index} className="group relative aspect-[4/5] overflow-hidden border border-[#2C2C2C] cursor-pointer">
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <div className="absolute bottom-0 left-0 right-0 p-8">
+                    <h3 className="text-2xl font-light text-white">{project.title}</h3>
+                  </div>
                 </div>
               </div>
             ))}
@@ -237,7 +113,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="services" className="pt-2 pb-32 px-6 bg-white">
+      <section id="services" className="py-32 px-6 bg-white">
         <div className="container mx-auto max-w-7xl">
           <h2 className="text-5xl font-light mb-20 text-center text-[#2C2C2C]">Услуги</h2>
           
@@ -275,56 +151,71 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="contact" className="py-20 px-6">
-        <div className="container mx-auto max-w-2xl text-center">
-          <h2 className="text-4xl md:text-5xl font-light mb-6">Начнём проект</h2>
-          <p className="text-lg text-muted-foreground mb-10 leading-relaxed">
-            Готовы обсудить ваш проект? Свяжитесь с нами для консультации 
-            и узнайте, как мы можем воплотить ваши идеи в реальность.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" className="text-base px-8">
-              <Icon name="Mail" size={18} className="mr-2" />
-              Написать нам
-            </Button>
-            <Button size="lg" variant="outline" className="text-base px-8">
-              <Icon name="Phone" size={18} className="mr-2" />
-              Позвонить
-            </Button>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 pt-8 border-t border-border">
+      <section id="contact" className="py-32 px-6 bg-[#2C2C2C]">
+        <div className="container mx-auto max-w-4xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Email</p>
-              <p className="font-medium">info@nda-studio.ru</p>
+              <h2 className="text-5xl font-light mb-8 text-white">Начнём<br/>разработку</h2>
+              <p className="text-xl text-white/70 leading-relaxed mb-8">
+                Воплощение ваших идей в реальность начинается с первого контакта. 
+                Свяжитесь с нами, и мы обсудим ваш проект.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-center gap-3 text-white">
+                  <Icon name="Mail" size={20} className="text-white/70" />
+                  <span>info@nda-studio.ru</span>
+                </div>
+                <div className="flex items-center gap-3 text-white">
+                  <Icon name="Phone" size={20} className="text-white/70" />
+                  <span>+7 (495) 123-45-67</span>
+                </div>
+                <div className="flex items-center gap-3 text-white">
+                  <Icon name="MapPin" size={20} className="text-white/70" />
+                  <span>Москва, ул. Примерная, 1</span>
+                </div>
+              </div>
             </div>
-            <div>
-              <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Телефон</p>
-              <p className="font-medium">+7 (495) 123-45-67</p>
-            </div>
-            <div>
-              <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Адрес</p>
-              <p className="font-medium">Москва, ул. Примерная, 1</p>
+            
+            <div className="space-y-4">
+              <input 
+                type="text" 
+                placeholder="Ваше имя" 
+                className="w-full px-6 py-4 bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none focus:border-white/40 transition-colors"
+              />
+              <input 
+                type="email" 
+                placeholder="Email" 
+                className="w-full px-6 py-4 bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none focus:border-white/40 transition-colors"
+              />
+              <textarea 
+                placeholder="Расскажите о вашем проекте" 
+                rows={5}
+                className="w-full px-6 py-4 bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none focus:border-white/40 transition-colors resize-none"
+              />
+              <Button 
+                className="w-full py-6 bg-white text-[#2C2C2C] hover:bg-white/90 font-medium text-lg"
+              >
+                Отправить заявку
+              </Button>
             </div>
           </div>
         </div>
       </section>
 
-      <footer className="py-8 px-6 border-t border-border bg-white">
+      <footer className="py-8 px-6 border-t border-[#2C2C2C]/10 bg-white">
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-muted-foreground">
-              © 2025 NDA Studio. Neuro.Design.Architecture
+            <p className="text-sm text-[#5A5A5A]">
+              © 2025 NDA — Neuro.Design.Architecture
             </p>
             <div className="flex gap-6">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="#" className="text-[#5A5A5A] hover:text-[#2C2C2C] transition-colors">
                 <Icon name="Instagram" size={20} />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="#" className="text-[#5A5A5A] hover:text-[#2C2C2C] transition-colors">
                 <Icon name="Facebook" size={20} />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="#" className="text-[#5A5A5A] hover:text-[#2C2C2C] transition-colors">
                 <Icon name="Linkedin" size={20} />
               </a>
             </div>
