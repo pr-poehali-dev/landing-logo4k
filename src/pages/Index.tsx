@@ -128,11 +128,7 @@ const Index = () => {
                 alt="Architecture 5"
                 className="col-span-2 row-span-2 w-full h-full object-cover grayscale"
               />
-              <img 
-                src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=400&q=80" 
-                alt="Architecture 6"
-                className="col-span-2 row-span-1 w-full h-full object-cover grayscale"
-              />
+              <div className="col-span-2 row-span-1 w-full h-full bg-black"></div>
               <img 
                 src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400&q=80" 
                 alt="Architecture 7"
@@ -143,26 +139,14 @@ const Index = () => {
                 alt="Architecture 8"
                 className="col-span-3 row-span-3 w-full h-full object-cover grayscale"
               />
-              <img 
-                src="https://images.unsplash.com/photo-1431576901776-e539bd916ba2?w=400&q=80" 
-                alt="Architecture 9"
-                className="col-span-2 row-span-1 w-full h-full object-cover grayscale"
-              />
+              <div className="col-span-2 row-span-1 w-full h-full bg-black"></div>
               <img 
                 src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=400&q=80" 
                 alt="Architecture 10"
                 className="col-span-2 row-span-2 w-full h-full object-cover grayscale"
               />
-              <img 
-                src="https://images.unsplash.com/photo-1513467535987-fd81bc7d62f8?w=400&q=80" 
-                alt="Architecture 11"
-                className="col-span-1 row-span-1 w-full h-full object-cover grayscale"
-              />
-              <img 
-                src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=400&q=80" 
-                alt="Architecture 12"
-                className="col-span-2 row-span-1 w-full h-full object-cover grayscale"
-              />
+              <div className="col-span-1 row-span-1 w-full h-full bg-black"></div>
+              <div className="col-span-2 row-span-1 w-full h-full bg-black"></div>
               <img 
                 src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&q=80" 
                 alt="Architecture 13"
