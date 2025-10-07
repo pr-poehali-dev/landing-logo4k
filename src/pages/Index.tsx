@@ -237,24 +237,39 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="services" className="pt-2 pb-20 px-6 bg-white">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl md:text-5xl font-light mb-4 text-center">Услуги</h2>
-          <p className="text-center text-muted-foreground mb-16">Комплексный подход к реализации проектов</p>
+      <section id="services" className="pt-2 pb-32 px-6 bg-white">
+        <div className="container mx-auto max-w-7xl">
+          <h2 className="text-5xl font-light mb-20 text-center text-[#2C2C2C]">Услуги</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-0 border border-[#2C2C2C]">
             {services.map((service, index) => (
-              <Card key={index} className="p-8 border-border hover:border-primary transition-colors duration-300">
-                <div className="flex items-start gap-6">
-                  <div className="p-3 bg-secondary rounded-sm">
-                    <Icon name={service.icon} size={28} className="text-primary" />
+              <div 
+                key={index} 
+                className="group relative p-12 border-[#2C2C2C] hover:bg-[#2C2C2C] transition-all duration-500 cursor-pointer"
+                style={{
+                  borderRight: index % 2 === 0 ? '1px solid #2C2C2C' : 'none',
+                  borderBottom: index < 2 ? '1px solid #2C2C2C' : 'none'
+                }}
+              >
+                <div className="space-y-6">
+                  <div className="flex items-center gap-4">
+                    <span className="text-6xl font-light text-[#2C2C2C] group-hover:text-white transition-colors duration-500">
+                      {String(index + 1).padStart(2, '0')}
+                    </span>
+                    <Icon 
+                      name={service.icon} 
+                      size={40} 
+                      className="text-[#2C2C2C] group-hover:text-white transition-colors duration-500" 
+                    />
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-medium mb-3">{service.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed">{service.description}</p>
-                  </div>
+                  <h3 className="text-2xl font-medium text-[#2C2C2C] group-hover:text-white transition-colors duration-500">
+                    {service.title}
+                  </h3>
+                  <p className="text-[#5A5A5A] group-hover:text-white/80 leading-relaxed transition-colors duration-500">
+                    {service.description}
+                  </p>
                 </div>
-              </Card>
+              </div>
             ))}
           </div>
         </div>
