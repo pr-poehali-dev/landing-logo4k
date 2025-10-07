@@ -75,22 +75,12 @@ const Index = () => {
         </div>
       </nav>
 
-      <section className="w-full h-screen relative bg-background flex items-center justify-center">
-        <div className="w-full h-full flex items-center justify-between px-20">
-          <img 
-            src="https://cdn.poehali.dev/files/ca9cf857-bb7f-4b17-a5ab-097bc530608d.png" 
-            alt="NDA Logo" 
-            className="h-full object-contain"
-          />
-          <div className="max-w-md space-y-6 text-right">
-            <h1 className="text-4xl md:text-5xl font-light text-[#2C2C2C] leading-tight">
-              Архитектура будущего
-            </h1>
-            <p className="text-lg text-[#8B7355] font-light">
-              Синтез нейротехнологий, дизайна и архитектурного мастерства
-            </p>
-          </div>
-        </div>
+      <section className="w-full h-screen relative bg-background">
+        <img 
+          src="https://cdn.poehali.dev/files/ca9cf857-bb7f-4b17-a5ab-097bc530608d.png" 
+          alt="NDA Logo" 
+          className="w-full h-full object-contain"
+        />
       </section>
 
       <section id="about" className="py-20 px-6 bg-background">
