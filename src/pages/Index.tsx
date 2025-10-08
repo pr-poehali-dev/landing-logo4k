@@ -265,44 +265,86 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="contact" className="py-32 px-6 bg-[#D4D4D4]">
-        <div className="container mx-auto max-w-2xl text-center">
-          <h2 className="text-5xl font-light mb-6 text-[#1A1A1A]">Начнём проект</h2>
-          <p className="text-lg text-[#4A4A4A] mb-12 leading-relaxed">
-            Готовы обсудить ваш проект? Свяжитесь с нами для консультации 
-            и узнайте, как мы можем воплотить ваши идеи в реальность.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-            <Button 
-              size="lg" 
-              className="text-base px-10 py-6 bg-[#6A6A6A] hover:bg-[#5A5A5A] text-white border-none"
-            >
-              <Icon name="Mail" size={18} className="mr-2" />
-              Написать нам
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="text-base px-10 py-6 border-[#1A1A1A] text-[#1A1A1A] hover:bg-[#1A1A1A] hover:text-white"
-            >
-              <Icon name="Phone" size={18} className="mr-2" />
-              Позвонить
-            </Button>
-          </div>
+      <section id="contact" className="py-32 px-6 bg-[#EFECE8]">
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <div className="text-left">
+              <h2 className="text-5xl font-bold mb-6 text-[#1A1A1A] uppercase">Свяжитесь с нами</h2>
+              <p className="text-lg text-[#4A4A4A] leading-relaxed">
+                Заполните форму обратной связи<br />
+                и мы вам перезвоним
+              </p>
+            </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-12 pt-12 border-t border-[#1A1A1A]/20">
             <div>
-              <p className="text-xs text-[#4A4A4A] uppercase tracking-wider mb-3">EMAIL</p>
-              <p className="font-medium text-[#1A1A1A]">info@nda-studio.ru</p>
-            </div>
-            <div>
-              <p className="text-xs text-[#4A4A4A] uppercase tracking-wider mb-3">ТЕЛЕФОН</p>
-              <p className="font-medium text-[#1A1A1A]">+7 (495) 123-45-67</p>
-            </div>
-            <div>
-              <p className="text-xs text-[#4A4A4A] uppercase tracking-wider mb-3">АДРЕС</p>
-              <p className="font-medium text-[#1A1A1A]">Москва, ул. Примерная, 1</p>
+              <form className="space-y-8">
+                <div>
+                  <label className="block text-sm font-medium text-[#1A1A1A] mb-2">
+                    Имя
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Имя"
+                    className="w-full px-0 py-3 bg-transparent border-0 border-b-2 border-[#1A1A1A] text-[#1A1A1A] placeholder:text-[#AAAAAA] focus:outline-none focus:border-[#1A1A1A] transition-colors"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-[#1A1A1A] mb-2">
+                    Телефон
+                  </label>
+                  <input
+                    type="tel"
+                    placeholder="Номер телефона"
+                    className="w-full px-0 py-3 bg-transparent border-0 border-b-2 border-[#1A1A1A] text-[#1A1A1A] placeholder:text-[#AAAAAA] focus:outline-none focus:border-[#1A1A1A] transition-colors"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-[#1A1A1A] mb-2">
+                    E-mail
+                  </label>
+                  <input
+                    type="email"
+                    placeholder="E-mail"
+                    className="w-full px-0 py-3 bg-transparent border-0 border-b-2 border-[#1A1A1A] text-[#1A1A1A] placeholder:text-[#AAAAAA] focus:outline-none focus:border-[#1A1A1A] transition-colors"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-[#1A1A1A] mb-2">
+                    Ваш регион
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Ваш регион"
+                    className="w-full px-0 py-3 bg-transparent border-0 border-b-2 border-[#1A1A1A] text-[#1A1A1A] placeholder:text-[#AAAAAA] focus:outline-none focus:border-[#1A1A1A] transition-colors"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-[#1A1A1A] mb-2">
+                    Ваш комментарий
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Ваш комментарий"
+                    className="w-full px-0 py-3 bg-transparent border-0 border-b-2 border-[#1A1A1A] text-[#1A1A1A] placeholder:text-[#AAAAAA] focus:outline-none focus:border-[#1A1A1A] transition-colors"
+                  />
+                </div>
+
+                <div className="pt-4">
+                  <p className="text-xs text-[#4A4A4A] mb-6">
+                    Нажимая на кнопку «Отправить», вы соглашаетесь с Политикой обработки персональных данных
+                  </p>
+                  <Button 
+                    type="submit"
+                    className="w-full bg-[#2C2C2C] hover:bg-[#1A1A1A] text-white py-6 text-base font-medium"
+                  >
+                    Отправить
+                  </Button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
