@@ -77,16 +77,6 @@ const Index = () => {
           alt="NDA Logo" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 flex items-center justify-end pr-20 md:pr-32">
-          <div className="max-w-lg space-y-4">
-            <h1 className="text-4xl md:text-6xl font-light text-[#2C2C2C] leading-tight">
-              Пространства<br/>с характером
-            </h1>
-            <p className="text-lg md:text-xl text-[#8B7355] font-light">
-              Архитектура. Дизайн. Технологии.
-            </p>
-          </div>
-        </div>
       </section>
 
       <section id="about" className="py-32 px-6 bg-white">
